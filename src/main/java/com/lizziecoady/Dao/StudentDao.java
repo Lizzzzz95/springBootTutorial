@@ -1,9 +1,13 @@
 package com.lizziecoady.Dao;
 
 import com.lizziecoady.Entity.Student;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+// DAO stands for Data Access Object
+// This tells spring that this is a database repository
+@Repository
 public class StudentDao {
 
 //    using fake data for now, will integrate with database later
