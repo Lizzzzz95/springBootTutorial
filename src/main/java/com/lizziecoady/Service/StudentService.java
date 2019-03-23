@@ -20,6 +20,23 @@ public class StudentService {
     public Collection<Student> getAllStudents(){
 //        we have the method getAllStudents made in the Dao so we are invoking it here
 //        this will in future be from a database
-        return studentDao.getAllStudents();
+        return this.studentDao.getAllStudents();
+    }
+
+    public Student getStudentById(int id){
+//        taken from StudentDao
+        return this.studentDao.getStudentById(id);
+    }
+
+    public void removeStudentById(int id) {
+        this.studentDao.removeStudentById(id);
+    }
+
+    public void updateStudent(Student student){
+        this.studentDao.updateStudent(student);
+    }
+
+    public void insertStudent(Student student) {
+        this.studentDao.insertStudent(student);
     }
 }
